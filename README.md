@@ -4,6 +4,7 @@ A simple Python library for displaying text on the LCD 1602 w/ I2C. Implemented 
 ## Simple Example
 ```python
 from LCD import LCD
+import time
 
 lcd = LCD() # params available for rPi revision, I2C Address, and backlight on/off
             # lcd = LCD(2, 0x3F, True)
@@ -28,3 +29,6 @@ Advanced Options > I2C > Enable
 #### Determine I2C Address
 `i2cdetect -y 0`
 default is 0x3F
+
+## History
+2020/08/26: Correct sample code in README
